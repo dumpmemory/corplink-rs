@@ -316,6 +316,7 @@ graph TD;
 # TODO
 
 - [ ] 使用 [Tauri][7] 实现界面(~~或许大概可能永远不会有~~)
+  - 参考实现：https://github.com/huangzheng2016/ecorplink
 - [x] 实现 TCP 版的 wg 协议
 - [x] 为不同配置生成不同的 `cookies.json`
 - [x] windows/mac 实现
@@ -325,6 +326,11 @@ graph TD;
 
 # Changelog
 
+- 0.5.5
+  - add more route configs(@yanickxia @zier-one @kfxhjz @ZeppLu)
+  - support protocol override config(@n-WN)
+  - usermode proxy with socks5(@wilinz)
+  - minor fix(@Ben8368 @huangzheng2016)
 - 0.5.4
   - fix memory leak in unsafe code
   - refactor error handling with `anyhow`
@@ -406,8 +412,8 @@ graph TD;
 # License
 
 ```license
- Copyright (C) 2023  PinkD, ShuNing, LionheartLann, XYenon, Verge, jixiuf,
- simpleapples, overvenus, fanwenlin, hexchain, ManiaciaChao, yanyongyu
+ Copyright (C) 2022-2026  PinkD
+ Other contributors: https://github.com/PinkD/corplink-rs/graphs/contributors
 
     This program is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public License
